@@ -17,6 +17,9 @@
 			table tr td{
 				width : 100%; height : 30px; border: 1px solid blue;
 			}
+			table, tr, td, th{
+				border-collapse: collapse;		
+			}
 		</style>
 </head>
 	<body>
@@ -33,7 +36,22 @@
 		</tr>
 		<tr style="height : 60%">
 			<td colspan="5">
-				<div style="width : 300px; height : 200px; margin : 0 auto;">
+					<table style="height : 50px; width : 30px">
+						<tr>
+							<td style="height : 35%; width : 10%;">
+							<input type="text" placeholder="ID입력"/>
+							</td>
+							<td style="width : 7%;" rowspan="2">
+							<input style= "width : 100%; height: 100%;" type="submit" value="로그인"/>
+							</td>
+						</tr>
+						<tr>
+							<td style="height : 35%; width : 10%;">
+							<input type="text" placeholder="PASS입력" />
+						</tr>
+					</table>
+					<!--
+					<div style="width : 300px; height : 200px; margin : 0 auto;">
 					<p>
 						햄버거 : ￦5,500 <br />
 						콜라   : ￦1,500 <br />
@@ -49,7 +67,8 @@
 						<input type="hidden" name="coffee" value="900" />
 						<input type="submit" value="전송"/>
 					</form>
-				</div>	
+					</div>  -->
+					
 			</td>
 		</tr>
 	</table>
