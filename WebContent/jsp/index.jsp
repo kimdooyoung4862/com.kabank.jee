@@ -1,15 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
-<%@ include file="common/head.jsp" %>
-<script src="../js/index.js"></script>
+<head>
+	<meta charset="UTF-8" />
+	<title>JSP</title>
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/index.css" />
+
+	<script src="../js/index.js"></script>
+</head>
 <body>
-<div id="wrapper">
 <header id="index_header">
 	<h1>BIT CAMP SAMPLE PROJECT</h1>
 </header>
-<section id="index_section">
+
+<section>
 <article>
+<div   id="wrapper">
 	<table id="index_table">
 		<tr>
 			<td colspan="5">
@@ -29,18 +36,19 @@
 						</tr>
 					</table>
 				</form>
-				<a id="check_admin" href="#">
-					<input type="submit" value="관리자"/>
+				<a id="go_admin_link" href="#">
+					관리자
 				</a>
-				<a id="go_join" href="#">
-					<input type="submit" value="회원가입"/>
+				<a id="go_join_link" href="#">
+					회원가입
 				</a>
 			</td>
 		</tr>
 	</table>
+</div>
 	</article>
 </section>
-</div>
 <%@ include file="common/footer.jsp"%>
 	</body>
+	<script src="../js/index.js"></script>
 </html>

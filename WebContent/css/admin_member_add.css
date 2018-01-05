@@ -1,0 +1,11 @@
+@charset "UTF-8";
+#add_input_id{width: 70%; height: 30px; margin-left: 60px;}
+#add_input_name{width: 70%; height: 30px; margin-left: 53px;}
+#add_input_ssn{width: 33%; height: 30px; margin-left: 7px;}
+#add_input_ssn1{width: 33%; height: 30px;}
+#add_input_phone{width: 21%; height: 30px; margin-left: 7px;}
+#add_input_phone1{width: 21%; height: 30px;}
+#add_input_email{width: 33%; height: 30px; margin-left: 25px;}
+#add_input_email1{width: 33%; height: 30px;}
+#add_input_addr{width: 70%; height: 30px; margin-left: 45px;}
+#add_h1{text-align: left;}

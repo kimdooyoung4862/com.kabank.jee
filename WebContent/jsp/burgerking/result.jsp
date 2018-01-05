@@ -13,6 +13,7 @@
 <html lang="en">
 <%@ include file="../common/head.jsp"%>
 <body>
+<div id="wrapper">
 <%@ include file="../common/header.jsp" %>
 <%@ include file="../common/nav.jsp" %>
 <section>
@@ -86,9 +87,12 @@
 			
 			---------------------------- <br />
 			총 계산금액<%= total%>원
+					<br />
 				</article>
 			</section>
 		<aside></aside>
+	</div>
 <%@ include file="../common/footer.jsp" %>
 	</body>
+	<script src="../../js/burgerking/burgerking.js"></script>
 </html>

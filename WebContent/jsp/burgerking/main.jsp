@@ -3,7 +3,6 @@
 <html lang="en">
 <%@ include file="../common/head.jsp"%>
 <body>
-<div id="wrapper">
 <%@ include file="../common/header.jsp" %>
 	<%@ include file="../common/nav.jsp" %>
 	<section>
@@ -16,7 +15,8 @@
 		</header>
 	</article>
 	<article>
-			<form action="result.jsp" >
+<div id="wrapper">
+			<form id="order_form" action="result.jsp" >
 				<table style="width: 400px; height: 400px; margin: 0 auto">
 					<tr>
 						<td>
@@ -28,7 +28,7 @@
 							</figcaption>
 						</figure>
 						</td>
-						<td style="width: 50px">
+						<td>
 						<figure>
 							<img src="../img/salad.jpg" style="height: 150px; width: 150px" alt="" />
 							<figcaption>
@@ -90,15 +90,16 @@
 							<input type="hidden" name="coffee" value="900" />
 							<input type="hidden" name="salad" value="2000" />
 							<input type="hidden" name="bagel" value="2800" />
-							<input type="submit" value="전송" style="width: 100px; margin-left: 300px"/>
+							<input id="burgerking_order_btn" type="button" value="전송" style="width: 100px; margin-left: 300px"/>
 						</td>
 					</tr>
 				</table>	
 			</form>
+	</div>
 			</article>
 		</section>
 	<aside></aside>
-	</div>
 <%@ include file="../common/footer.jsp" %>
 	</body>
+	<script src="../../js/burgerking/burgerking.js"></script>
 </html>

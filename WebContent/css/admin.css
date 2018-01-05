@@ -1,0 +1,12 @@
+@charset "UTF-8";
+#admin_header{text-align: center}
+#admin_sidebar{float : left; margin-left: 50px; width: 200px; height: 500px; border-style: solid}
+#admin_table{border-collapse: collapse ; width:1000px; height:500px; margin-left: 300px; text-align: center; border-style: solid}
+#admin_tr{border-style: solid;}
+#admin_member_select{width: 80px; height: 40px;}
+#admin_member_input{width: 650px; height: 30px;}
+#admin_member_button{width: 100px; height: 30px;}
+#admin_member_section{margin-left: 10px;}
+#add_member_btn{margin-left: 800px; width: 150px; height: 50px;}
+#add_table{border-collapse: collapse ; width:1000px; height:500px; margin-left: 300px; border-style: solid; text-align: center;}
+#member_register_btn{margin: 0 auto; width: 150px; height: 50px;}

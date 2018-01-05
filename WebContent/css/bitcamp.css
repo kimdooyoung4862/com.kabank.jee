@@ -1,1 +1,4 @@
 @charset "UTF-8";
+#bit_main{width: 700px; height: 200px; margin: 0 auto; border-style: solid;}
+table tr td{border-style: solid;}
+#bit_td{width: 300px;}

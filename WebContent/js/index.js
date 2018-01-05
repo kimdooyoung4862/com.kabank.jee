@@ -1,22 +1,51 @@
 /**
  * 
  */
-function showAlert(){
-	var admin = confirm('관리자');
-	if(admin){
-		alert('안녕하세요 관리자님');		
-		location.href = "burgerking/main.jsp";
-	}else{
-		alert('관리자만 접근가능 합니다');
-	}
-	
-}
-function clickMe(){
-	document.querySelector('#check_admin').onclick = showAlert;
-	document.querySelector('#go_join').onclick = gojoin;
-}
-function gojoin(){
-	location.href = "member/join.jsp";
-}
 
-window.onload = clickMe;
+function init() {
+	var goAdminLink = document.querySelector('#go_admin_link');
+	var goJoinLink = document.querySelector('#go_join_link');
+	var indexLoginBtn = document.querySelector('#index_input_btn');
+	
+	goAdminLink.addEventListener("click",goAdmin,false);
+	goJoinLink.addEventListener("click",goJoin,false);
+	indexLoginBtn.addEventListener("click",indexLogin,false);
+}
+function goAdmin() {
+   if(confirm('관리자?')) {
+         location.href = "admin/main.jsp";
+   }else{
+         alert('관리자만 접근가능 합니다.');
+   }
+}
+   function goJoin() {
+   	 var admin = confirm('회원가입하시겠습니까?');
+        if(admin) {
+              location.href = "user/join_form.jsp";
+        }else{
+        }
+
+
+
+	}
+   function indexLogin(e) {
+
+		var loginId =document.querySelector('#index_input_id').value;
+		var loginPass =document.querySelector('#index_input_pass').value;
+		var joinId = sessionStorage.getItem('id');
+		var joinPass = sessionStorage.getItem('pass');
+		
+		if(loginId === joinId){
+			if(loginPass === joinPass){
+				alert('환영합니다' +joinId+"님");
+			}else{
+				e.preventDefault();
+				alert('비밀번호 오류');
+			}
+		}else{
+			e.preventDefault();
+			alert('없는 ID입니다.');
+		}
+	}
+
+window.addEventListener("load",init,false);
